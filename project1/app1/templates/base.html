@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User and Task Management</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'add_user' %}">Add User</a></li>
+            <li><a href="{% url 'add_task' %}">Add Task</a></li>
+            <li><a href="{% url 'list_users' %}">List Users</a></li>
+            <li><a href="{% url 'list_tasks' %}">List Tasks</a></li>
+            <li><a href="{% url 'export_to_excel' %}">Export to Excel</a></li>
+        </ul>
+    </nav>
+
+    <h1>User and Task Management</h1>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
